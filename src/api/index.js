@@ -3,7 +3,7 @@ const express = require("express");
 const emojis = require("./emojis");
 const login = require("./Login");
 
-const router = express.Router();
+const router = new express.Router();
 
 router.get("/", (req, res) => {
   res.json({
