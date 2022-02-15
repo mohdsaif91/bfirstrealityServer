@@ -6,6 +6,7 @@ const LoginSchema = require("../Modals/LoginModal");
 const login = async (req, res) => {
   try {
     const { userName, password } = req.body;
+    console.log(userName, password, "!!!!!!!");
     if (!(userName && password)) {
       res.status(400).send("All input is required");
     }
